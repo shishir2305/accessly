@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+  - packages/*
+allowBuilds:
+  supabase: true
+  esbuild: true
+  sharp: true
+  msgpackr-extract: false
+minimumReleaseAgeExclude:
+  - bullmq@6.4.1

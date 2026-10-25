@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["node", "chrome", "vitest/globals"],
+    "paths": {
+      "@accessly/contracts": ["./packages/contracts/src/index.ts"],
+      "@accessly/scanner": ["./packages/scanner/src/index.ts"],
+      "@accessly/domain": ["./packages/domain/src/index.ts"],
+      "@accessly/database": ["./packages/database/src/index.ts"],
+      "@accessly/ui": ["./packages/ui/src/index.ts"]
+    }
+  },
+  "include": [
+    "apps/**/*.ts",
+    "apps/**/*.tsx",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "tests/**/*.ts",
+    "scripts/**/*.ts",
+    "*.ts"
+  ],
+  "exclude": ["node_modules", "**/dist", "**/.next"]
+}

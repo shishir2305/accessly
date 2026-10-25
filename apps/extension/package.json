@@ -1,0 +1,13 @@
+{
+  "name": "@accessly/extension",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsx build.ts"
+  },
+  "dependencies": {
+    "@accessly/contracts": "workspace:*",
+    "@accessly/scanner": "workspace:*"
+  }
+}

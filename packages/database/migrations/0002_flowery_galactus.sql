@@ -1,0 +1,1 @@
+ALTER TABLE "runs" ADD COLUMN "evidence_state" text DEFAULT 'none' NOT NULL;
